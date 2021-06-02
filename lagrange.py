@@ -20,8 +20,8 @@ def interpolate(samples, distance):
     return elevation
 
 
-def lagrange_interpolation(data, interval, randomised=False, force_last=False):
-    samples = generate_samples(data, interval, randomised, force_last)
+def lagrange_interpolation(data, interval, randomised=False, force_edges=False):
+    samples = generate_samples(data, interval, randomised, force_edges)
 
     elevation = []
     for i in range(len(data["distance"])):
