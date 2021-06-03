@@ -28,7 +28,7 @@ def generate_samples(data, interval, randomised=False, force_edges=False):
         if force_edges:
             samples_indexes.append(0)
             samples_indexes.append(data_length - 1)
-            num_of_samples -= 2
+            num_of_samples -= 1
 
         for i in range(num_of_samples):
             samples_indexes.append(get_new_index(samples_indexes, data_length - 1))
